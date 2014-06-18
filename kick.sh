@@ -11,6 +11,9 @@ NIC=$1       # Network interface
 HOST_MAC=$2  # Host to be kicked
 BSSID=$(iwconfig wlan0 | grep -io '[0-9A-F]\{2\}\(:[0-9A-F]\{2\}\)\{5\}')
 
+# MAC version
+#BSSID=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I en1 | grep BSSID | cut -d" " -f12)
+
 #
 # Scans the localnet for all connected hosts.
 #
