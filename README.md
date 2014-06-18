@@ -3,7 +3,7 @@ kick.sh
 
 Requirements
 ------------
-- **Root permissions**
+- **Root permission**
 - aircrack-ng
 - arp-scan
 
